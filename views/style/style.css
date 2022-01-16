@@ -4,24 +4,25 @@
   padding: 0;
 }
 
-html, .body, .footer {
-  background-color: #EEEDF3;
+html,
+.body,
+.footer {
+  background-color: #eeedf3;
 }
 
 .navbar-brand i {
-	margin: 0 10px 0 0;
+  margin: 0 10px 0 0;
 }
 
 .nav-item i {
   display: inline-block;
   margin: 0 10px 0 0;
   font-size: 19px;
-
 }
 
 .body .path {
   padding: 15px 0 0 20px;
-	font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .body .path a {
@@ -29,7 +30,7 @@ html, .body, .footer {
 }
 
 .body .box .center {
-	text-align: center;
+  text-align: center;
 }
 
 .body .box {
@@ -51,17 +52,17 @@ html, .body, .footer {
 }
 
 .body .box .arti {
-	color: #7E7E7E;
-	margin: 10px 0 0 0;
+  color: #7e7e7e;
+  margin: 10px 0 0 0;
 }
 
 .body .box .baca {
-	margin: 10px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .body .box .arab {
-	text-align: right;
-	font-size: 25px;
+  text-align: right;
+  font-size: 25px;
 }
 
 .body .box .nama-latin {
@@ -75,52 +76,52 @@ html, .body, .footer {
 .body .box .nama-arab {
   text-align: right;
   font-size: 30px;
-  color: #15AC00;
+  color: #15ac00;
 }
 
 .body .box .button {
-	text-align: right;
+  text-align: right;
 }
 
 .body .box .button i {
-	margin: 0 5px 0 0;
+  margin: 0 5px 0 0;
 }
 
 .body .buttondv {
-	margin: 0 0 0 20px;
+  margin: 0 0 0 20px;
 }
 
 .body .buttondv i {
-	margin: 0 5px 0 5px;
+  margin: 0 5px 0 5px;
 }
 
 .body .box button,
 .body button {
-	margin: 15px 0 0 0;
-	color: white;
-	background-color: #239DB8;
-	border: none;
-	padding: 8px;
-	border-radius: 10px;
-	transition: all 0.3s ease 0s;
-	box-shadow: 8px 7px 6px -4px rgba(35,157,184,0.10);
-	-webkit-box-shadow: 8px 7px 6px -4px rgba(35,157,184,0.10);
-	-moz-box-shadow: 8px 7px 6px -4px rgba(35,157,184,0.10);
+  margin: 15px 0 0 0;
+  color: white;
+  background-color: #239db8;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  box-shadow: 8px 7px 6px -4px rgba(35, 157, 184, 0.1);
+  -webkit-box-shadow: 8px 7px 6px -4px rgba(35, 157, 184, 0.1);
+  -moz-box-shadow: 8px 7px 6px -4px rgba(35, 157, 184, 0.1);
 }
 
 .body .box button:hover,
 .body button:hover {
-	transform: translateY(-3px);
-	text-decoration: none;
+  transform: translateY(-3px);
+  text-decoration: none;
 }
 
 .body .garis {
-  color: #EEEDF3;
+  color: #eeedf3;
 }
 
 .footer {
   text-align: center;
-	padding: 0 0 40px 0;
+  padding: 0 0 40px 0;
 }
 
 .footer p {
@@ -133,9 +134,7 @@ html, .body, .footer {
 }
 
 @media (min-width: 992px) {
-  
   .nav-item i {
     display: none;
   }
-  
 }

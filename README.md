@@ -19,6 +19,9 @@ Free Online Al-Quran Website
 * [Website](https://alquranid.herokuapp.com)
 * [Repository](https://github.com/DrelezTM/Al-Quran)
 
+## License
+* [License](https://github.com/DrelezTM/Al-Quran/blob/main/LICENSE)
+
 ## Error or Bug
 * [Discord](https://dsc.gg/DrelezTM)
 * [YouTube](https://www.youtube.com/p/DrelezTM)

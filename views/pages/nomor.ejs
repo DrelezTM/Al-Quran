@@ -1,96 +1,109 @@
 <!DOCTYPE html>
 <html>
-	<head>
+  <head>
     <!-- Bio -->
-		<title>Al-Quran</title>
+    <title>Al-Quran</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <!-- Bootstrap -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <!-- Google Font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <!-- Css -->
-		<link rel="stylesheet" type="text/css" href="/settings/css">
-	</head>
-	<body>
-		<div class="header">
-			<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #239DB8">
-        <a class="navbar-brand" href="/"><strong><i class="fas fa-book"></i> Al-Quran</strong></a>
+    <link rel="stylesheet" type="text/css" href="/settings/css">
+  </head>
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #239DB8">
+        <a class="navbar-brand" href="/">
+          <strong>
+            <i class="fas fa-book"></i> Al-Quran </strong>
+        </a>
         <button class="navbar-toggler btn-outline" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/"><i class="fa fa-home"></i>Home</a>
-            </li>
-						<li class="nav-item">
-              <a class="nav-link" href="/surat"><i class="fas fa-book-open"></i>Surat</a>
+              <a class="nav-link" href="/">
+                <i class="fa fa-home"></i>Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/repository"><i class="fa-brands fa-github"></i> Repository</a>
+              <a class="nav-link" href="/surat">
+                <i class="fas fa-book-open"></i>Surat </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/repository">
+                <i class="fa-brands fa-github"></i> Repository </a>
             </li>
           </ul>
         </div>
-			</nav>
-		</div>
-		<div class="body">
-			<audio id="myAudio">
-				<source src="<%= api.audio %>" type="audio/mpeg">
-			</audio>
+      </nav>
+    </div>
+    <div class="body">
+      <audio id="myAudio">
+        <source src="<%= api.audio %>" type="audio/mpeg">
+      </audio>
       <div class="path">
-        <a href="/">Home</a> > <a href="/surat">Surat</a> > <a href="<%= api.nomor %>"><%= api.nama_latin %></a>
+        <a href="/">Home</a> > <a href="/surat">Surat</a> > <a href="<%= api.nomor %>"><%= api.nama_latin %> </a>
       </div>
       <div class="surat">
-				<div class="box">
-          <p class="nama-latin"><b><%= api.nama_latin %> - <%= api.nama %></b></p>
-          <p class="arti">Jumlah ayat: <%= api.jumlah_ayat %> | Arti: <%= api.arti %></p>
-					<div class="button">
-						<button onclick="location.href='/surat/<%= api.nomor %>/tafsir'"><i class="fas fa-bookmark"></i> Lihat Tafsir</button>
-						<button id="btnp" onclick="play()"><i class="fas fa-play"></i> Play Audio</button>
-						<button id="btns" onclick="stop()" style="display: none;"><i class="fas fa-stop"></i> Stop Audio</button>
-					</div>
-        </div>
-				<% api.ayat.forEach(function(apis) { %>
         <div class="box">
-          <p class="nama-latin"><b><%= apis.nomor %>.</b></p>
-          <p class="arab"><%= apis.ar %></p>
-          <p class="baca"><%- apis.tr %></p>
-					<p class="arti"><%= apis.idn %></p>
+          <p class="nama-latin">
+            <b><%= api.nama_latin %> - <%= api.nama %> </b>
+          </p>
+          <p class="arti">Jumlah ayat: <%= api.jumlah_ayat %> | Arti: <%= api.arti %> </p>
+          <div class="button">
+            <button onclick="location.href='/surat/<%= api.nomor %>/tafsir'">
+              <i class="fas fa-bookmark"></i> Lihat Tafsir </button>
+            <button id="btnp" onclick="play()">
+              <i class="fas fa-play"></i> Play Audio </button>
+            <button id="btns" onclick="stop()" style="display: none;">
+              <i class="fas fa-stop"></i> Stop Audio </button>
+          </div>
+        </div><% api.ayat.forEach(function(apis) { %> <div class="box">
+          <p class="nama-latin">
+            <b><%= apis.nomor %>. </b>
+          </p>
+          <p class="arab"><%= apis.ar %> </p>
+          <p class="baca"><%- apis.tr %> </p>
+          <p class="arti"><%= apis.idn %> </p>
+        </div><% }); %> <div class="buttondv">
+          <button onclick="location.href ='/surat'">
+            <i class="fas fa-mouse-pointer"></i> Pilih Surat </button>
         </div>
-				<% }); %>
-				<div class="buttondv">
-					<button onclick="location.href ='/surat'"><i class="fas fa-mouse-pointer"></i> Pilih Surat</button>
-				</div>
         <div class="garis">.</div>
       </div>
     </div>
-		<div class="footer">
-      <p>Copyright <i class="far fa-copyright"></i> 2022</p>
-      <p>Made by Moslem from Indonesia with <i class="fas fa-heart"></i></p>
+    <div class="footer">
+      <p>Copyright <i class="far fa-copyright"></i> 2022 </p>
+      <p>Made by Moslem from Indonesia with <i class="fas fa-heart"></i>
+      </p>
     </div>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script>
-			const x = document.getElementById("myAudio");
-			const btnp = document.getElementById("btnp");
-			const btns = document.getElementById("btns");
-			function play() {
-				x.play();
-				btns.style.display = "inline-block";
-				btnp.style.display = "none";
-			}
-			function stop() {
-				btns.style.display = "none";
-				btnp.style.display = "inline-block";
-			  x.pause();
-			}
-		</script>
-	</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      const x = document.getElementById("myAudio");
+      const btnp = document.getElementById("btnp");
+      const btns = document.getElementById("btns");
+
+      function play() {
+        x.play();
+        btns.style.display = "inline-block";
+        btnp.style.display = "none";
+      }
+
+      function stop() {
+        btns.style.display = "none";
+        btnp.style.display = "inline-block";
+        x.pause();
+      }
+    </script>
+  </body>
 </html>

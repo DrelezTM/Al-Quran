@@ -1,3 +1,4 @@
 [build]
-  command = "npm install && npm run build && node node_modules/pug-cli/index.js views/ --out ./"
-  functions = "functions"
+  base    = "/"
+  publish = "public"
+  command = "npm run build"

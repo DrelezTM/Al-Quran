@@ -1,4 +1,4 @@
 [build]
   base    = "/"
   publish = "public"
-  command = "node server.js"
+  command = "node ."

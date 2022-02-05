@@ -19,7 +19,7 @@
   "repository": {
     "url": "https://alquranid.herokuapp.com/"
   },
-  "license": "GNU General Public License v3.0",
+  "license": "MIT",
   "keywords": [
     "Al-Quran",
     "DrelezTM"

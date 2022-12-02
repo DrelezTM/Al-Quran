@@ -1,6 +1,6 @@
 # Al-Quran
 <p align="center">
-  <img alt="@alquranid" style="width: 150px;" src="https://github.com/DrelezTM/Al-Quran/raw/main/img/icon.png">
+  <img alt="@alquranid" style="width: 150px;" src="https://github.com/DrelezTM/Al-Quran/raw/main/views/assets/img/icon.png">
 </p>
 <div align="center">
   <h3>Al-Quran ID</h3>

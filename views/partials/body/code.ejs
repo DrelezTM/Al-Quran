@@ -1,0 +1,33 @@
+<script>
+	var audio = new Audio();
+	audio.src = "<%= api.audio %>";
+	audio.preload = "auto";
+	var audioSlider = document.querySelector('input[type="range"]');
+
+	function play() {
+		audio.play();
+		document.getElementById("play").style = "display: none;";
+		document.getElementById("stop").style = "display: inline-block;";
+	}
+	
+	function stop() {
+		audio.pause();
+		document.getElementById("play").style = "display: inline-block;";
+		document.getElementById("stop").style = "display: none;";
+	}
+
+	setInterval(updateSongSlider, 1000);
+	function updateSongSlider(){
+		var c = Math.round(audio.currentTime);
+		audioSlider.value = c;
+		
+		var d = audio.duration;
+		audioSlider.setAttribute("max", d);
+		
+	}
+
+	function seek(){		 
+		audio.currentTime = audioSlider.value;			
+		play();	
+	}
+</script>

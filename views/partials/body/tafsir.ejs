@@ -1,0 +1,22 @@
+<!-- JUMBOTRON START -->
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h2>☪ <%= api.nama_latin %></h2>
+		<h1 class="display-4">Arti: <%= api.arti %> | Jumlah ayat: <%= api.jumlah_ayat %></h1>
+		<h1 class="info display-4">Tafsir</h1>
+	</div>
+</div>
+<!-- JUMBOTRON END -->
+
+<!-- LIST START -->
+<div id="list">
+	<% tafsir.forEach(function (apis) { %>
+	<div class="box">
+		<div class="texts-box">
+			<h4 class="nomor">Ayat <%= apis.ayat %></h4>
+			<p class="arti tafsir"><%= apis.tafsir %></p>
+		</div>
+	</div>
+	<% }); %>
+</div>
+<!-- LIST END -->

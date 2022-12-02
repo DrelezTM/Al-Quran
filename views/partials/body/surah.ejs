@@ -1,0 +1,26 @@
+<!-- JUMBOTRON START -->
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h2>☪ <%= api.nama_latin %></h2>
+		<h1 class="display-4">Arti: <%= api.arti %> | Jumlah ayat: <%= api.jumlah_ayat %></h1>
+		<input class="progress" type="range" value="0" min="0" max="100" step="1" onchange="seek()">
+		<a class="btn btn-light rounded-circle" id="previous" href="<%= data.prev %>"><i class="fa-solid fa-backward-step"></i></a>
+		<a class="btn btn-light rounded-circle" id="play" onclick="play()"><i class="fas fa-play"></i></a>
+		<a class="btn btn-light rounded-circle" id="stop" onclick="stop()" style="display: none;"><i class="fas fa-stop"></i></a>
+		<a class="btn btn-light rounded-circle" id="previous" href="<%= data.next %>"><i class="fa-solid fa-forward-step"></i></a>
+	</div>
+</div>
+<!-- JUMBOTRON END -->
+
+<!-- LIST START -->
+<div id="list">
+	<% ayat.forEach(function(apis) { %>
+		<div class="box">
+			<h4 class="nomor"><%= apis.nomor %>.</h4>
+			<h3 class="arab" dir="auto"><%= apis.ar %></h3>
+			<p class="latin"><%= apis.tr %></p>
+			<p class="arti"><%= apis.idn %></p>
+		</div>
+	<% }); %>
+</div>
+<!-- LIST END -->

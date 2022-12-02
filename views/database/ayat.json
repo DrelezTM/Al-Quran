@@ -1,0 +1,62 @@
+[
+	{
+		"nomor": 3,
+		"nama": "اٰل عمران",
+		"nama_latin": "Ali 'Imran",
+		"jumlah_ayat": 200,
+		"tempat_turun": "madinah",
+		"arti": "Keluarga Imran",
+		"data": {
+			"inti": "Agama di sisi Allah ialah Islam",
+			"nomor": 19,
+			"arab": "اِنَّ الدِّيْنَ عِنْدَ اللّٰهِ الْاِسْلَامُ ۗ وَمَا اخْتَلَفَ الَّذِيْنَ اُوْتُوا الْكِتٰبَ اِلَّا مِنْۢ بَعْدِ مَا جَاۤءَهُمُ الْعِلْمُ بَغْيًاۢ بَيْنَهُمْ ۗوَمَنْ يَّكْفُرْ بِاٰيٰتِ اللّٰهِ فَاِنَّ اللّٰهَ سَرِيْعُ الْحِسَابِ",
+			"latin": "innad-dīna ‘indallāhil-islām(u), wa makhtalafal-lażīna ūtul-kitāba illā mim ba‘di mā jā'ahumul-‘ilmu bagyam bainahum, wa may yakfur bi'āyātillāhi fa innallāha sarī‘ul-ḥisāb(i).",
+			"arti": "Sesungguhnya agama di sisi Allah ialah Islam. Tidaklah berselisih orang-orang yang telah diberi Kitab kecuali setelah mereka memperoleh ilmu, karena kedengkian di antara mereka. Barangsiapa ingkar terhadap ayat-ayat Allah, maka sungguh, Allah sangat cepat perhitungan-Nya."
+		}
+	},
+	{
+		"nomor": 17,
+		"nama": "الاسراۤء",
+		"nama_latin": "Al-Isra'",
+		"jumlah_ayat": 111,
+		"tempat_turun": "mekah",
+		"arti": "Memperjalankan Malam Hari",
+		"data": {
+			"inti": "Jauhi Perbuatan Zina",
+			"nomor": 32,
+			"arab": "وَلَا تَقْرَبُوا الزِّنٰىٓ اِنَّهٗ كَانَ فَاحِشَةً ۗوَسَاۤءَ سَبِيْلًا",
+			"latin": "innad-dīna ‘indallāhil-islām(u), wa makhtalafal-lażīna ūtul-kitāba illā mim ba‘di mā jā'ahumul-‘ilmu bagyam bainahum, wa may yakfur bi'āyātillāhi fa innallāha sarī‘ul-ḥisāb(i).",
+			"arti": "Dan janganlah kamu mendekati zina; (zina) itu sungguh suatu perbuatan keji, dan suatu jalan yang buruk."
+		}
+	},
+	{
+		"nomor": 49,
+		"nama": "الحجرٰت",
+		"nama_latin": "Al-Hujurat",
+		"jumlah_ayat": 18,
+		"tempat_turun": "madinah",
+		"arti": "Kamar-Kamar",
+		"data": {
+			"inti": "Jauhilah Sifat Su'udzon dan Tajassus",
+			"nomor": 12,
+			"arab": "يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوا اجْتَنِبُوْا كَثِيْرًا مِّنَ الظَّنِّۖ اِنَّ بَعْضَ الظَّنِّ اِثْمٌ وَّلَا تَجَسَّسُوْا وَلَا يَغْتَبْ بَّعْضُكُمْ بَعْضًاۗ اَيُحِبُّ اَحَدُكُمْ اَنْ يَّأْكُلَ لَحْمَ اَخِيْهِ مَيْتًا فَكَرِهْتُمُوْهُۗ وَاتَّقُوا اللّٰهَ ۗاِنَّ اللّٰهَ تَوَّابٌ رَّحِيْمٌ",
+			"latin": "yā ayyuhal-lażīna āmanujtanibū kaṡīram minaẓ-ẓann(i), inna ba‘daẓ-ẓanni iṡmuw wa lā tajassasū wa lā yagtab ba‘ḍukum ba‘ḍā(n), ayuḥibbu aḥadukum ay ya'kula laḥma akhīhi maitan fa karihtumūh(u), wattaqullāh(a), innallāha tawwābur raḥīm(un).",
+			"arti": "Wahai orang-orang yang beriman! Jauhilah banyak dari prasangka, sesungguhnya sebagian prasangka itu dosa dan janganlah kamu mencari-cari kesalahan orang lain dan janganlah ada di antara kamu yang menggunjing sebagian yang lain. Apakah ada di antara kamu yang suka memakan daging saudaranya yang sudah mati? Tentu kamu merasa jijik. Dan bertakwalah kepada Allah, sesungguhnya Allah Maha Penerima tobat, Maha Penyayang."
+		}
+	},
+	{
+		"nomor": 7,
+		"nama": "الاعراف",
+		"nama_latin": "Al-A'raf",
+		"jumlah_ayat": 206,
+		"tempat_turun": "mekah",
+		"arti": "Tempat Tertinggi",
+		"data": {
+			"inti": "Perintah Menutup Aurat",
+			"nomor": 26,
+			"arab": "يٰبَنِيْٓ اٰدَمَ قَدْ اَنْزَلْنَا عَلَيْكُمْ لِبَاسًا يُّوَارِيْ سَوْءٰتِكُمْ وَرِيْشًاۗ وَلِبَاسُ التَّقْوٰى ذٰلِكَ خَيْرٌۗ ذٰلِكَ مِنْ اٰيٰتِ اللّٰهِ لَعَلَّهُمْ يَذَّكَّرُوْنَ ",
+			"latin": "yā banī ādama qad anzalnā ‘alaikum libāsay yuwārī sau'ātikum wa rīsyā(n), wa libāsut-taqwā żālika khair(un), żālika min āyātillāhi la‘allahum yażżakkarūn(a).",
+			"arti": "Wahai anak cucu Adam! Sesungguhnya Kami telah menyediakan pakaian untuk menutupi auratmu dan untuk perhiasan bagimu. Tetapi pakaian takwa, itulah yang lebih baik. Demikianlah sebagian tanda-tanda kekuasaan Allah, mudah-mudahan mereka ingat."
+		}
+	}
+]

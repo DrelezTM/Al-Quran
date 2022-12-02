@@ -1,0 +1,52 @@
+<!-- JUMBOTRON START -->
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h2>☪ Al-Qur'an ID </h2>
+		<h1 class="display-4">Penuhi Kebutuhan Islami Harian Anda Di Sini. Akses Kapan Saja Di Mana Saja, Semuanya Lebih Mudah Dengan Al-Quran ID</h1>
+		<a class="btn btn-light" href="#list">Ayo Mulai!</a>
+	</div>
+</div>
+<!-- JUMBOTRON END -->
+
+<!-- LIST START -->
+<div class="list" id="list">
+	<p class="list-title">Tafsir</p>
+	<div class="search-box">
+		<form method="get">
+			<div class="input-group mb-3">
+		  	<input name="search" type="text" class="form-control" placeholder="Search Tafsir" aria-label="Search Surah" aria-describedby="basic-addon2">
+			  <div class="input-group-append">
+			    <button class="btn btn-outline-info" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+			  </div>
+			</div>
+		</form>
+	</div>
+	<% if (search) { %>
+		<div class="boxs">
+		<% if (Object.keys(result).length === 0) { %>
+			<a href="/">
+				<img style="width: 60px; height: 60px;" alt="Al-Quran [IMG by @DrelezTM]" src="/assets/svg/error.svg" />
+				<h5>ERROR</h5>
+				<p>404 - NOT FOUND!</p>
+			</a>
+		<% } else { %>
+			<a href="/tafsir/<%= result.nomor %>">
+				<img alt="Al-Quran [IMG by @DrelezTM]" src="/assets/img/<%= result.tempat_turun %>.png" />
+				<h5><%= result.nama_latin %></h5>
+				<p><%= result.arti %></p>
+			</a>
+		<% } %>
+		</div>
+	<% } else { %>
+		<% api.forEach(function(apis) { %>
+			<div class="boxs">
+				<a href="/tafsir/<%= apis.nomor %>">
+					<img alt="Al-Quran [IMG by @DrelezTM]" src="/assets/img/<%= apis.tempat_turun %>.png" />
+					<h5><%= apis.nama_latin %></h5>
+					<p><%= apis.arti %></p>
+				</a>
+			</div>
+		<% }); %>
+	<% } %>
+</div>
+<!-- LIST END -->

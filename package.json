@@ -5,8 +5,8 @@
   "author": "DrelezTM",
   "main": "server.js",
   "scripts": {
-    "start": "node .",
-    "build": "node ."
+    "start": "nodemon server.js",
+    "build": "netlify-lambda build express"
   },
   "dependencies": {
     "ejs": "^3.1.6",

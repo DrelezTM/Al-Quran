@@ -1,6 +1,6 @@
 {
-  "name": "Al-Quran",
-  "version": "0.0.1",
+  "name": "al-quran",
+  "version": "3.0.0",
   "description": "Al-Quran",
   "author": "DrelezTM",
   "main": "server.js",

@@ -3,9 +3,9 @@
   "version": "3.0.0",
   "description": "Al-Quran",
   "author": "DrelezTM",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon index.js",
     "build": "netlify-lambda build express"
   },
   "dependencies": {

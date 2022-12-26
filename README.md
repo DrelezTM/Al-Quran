@@ -49,5 +49,8 @@
 * [YouTube](https://www.youtube.com/p/DrelezTM)
 * [Instagram](https://www.instagram.com/DrelezTM)
 
+## Version
+* [Al-Quran ID v1.0](https://discord.com/channels/927562244538130503/927563396755378246/1056771312481222777)
+
 ## License
 * [License](https://github.com/DrelezTM/Al-Quran/blob/main/LICENSE)

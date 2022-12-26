@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const ejs = require('ejs');
 const fetch = require("node-fetch");
 const fetchJson = async (url, options) => new Promise(async (resolve, reject) => {
 	fetch(url, options).then(response => response.json()).then(json => {

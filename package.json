@@ -25,7 +25,7 @@
   "routes": [{
     "src": "/(.*)",
     "dest": "index.js"
-  }]
+  }],
   "license": "MIT",
   "keywords": [
     "Al-Quran",

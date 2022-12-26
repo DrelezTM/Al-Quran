@@ -18,6 +18,14 @@
   "repository": {
     "url": "https://alquranid.herokuapp.com/"
   },
+  "builds": [{
+    "src": "index.js",
+    "use": "@now/node"
+  }],
+  "routes": [{
+    "src": "/(.*)",
+    "dest": "index.js"
+  }]
   "license": "MIT",
   "keywords": [
     "Al-Quran",

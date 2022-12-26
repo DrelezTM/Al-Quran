@@ -10,7 +10,6 @@ const fetchJson = async (url, options) => new Promise(async (resolve, reject) =>
 	});
 });
 
-app.set('views', './views')
 app.set('view engine', 'ejs');
 
 app.get('/style', async (req, res) => {

@@ -10,7 +10,7 @@
   <a href="https://alquranid.herokuapp.com/">Website</a> | <a href="https://discord.gg/9BaNBVNtw4">Report Bug</a> | <a href="https://github.com/DrelezTM/Al-Quran/">Repository</a>
 </div>
 
-## Installation
+## Installation 📑
 * Clone Repository
   ```sh
   git clone https://github.com/DrelezTM/Al-Quran
@@ -24,33 +24,33 @@
   npm start
   ```
 
-## Built With
+## Built With 🛠
 * [ExpressJS](https://expressjs.com)
 * [EJS](https://ejs.co)
 * [Node-Fetch](https://www.npmjs.com/package/node-fetch)
 
-## Api
+## Api 🖊
 * [EQuranID](https://equran.id/apidev)
 * [CountAPI](https://api.countapi.xyz/hit/{linkurl}/visits)
 
-## Website
+## Website 📡
 * [Website](https://alquranid.herokuapp.com)
 * [Repository](https://github.com/DrelezTM/Al-Quran)
 
-## Acknowledgments
+## Acknowledgments 💌
 * [FontAwesome](https://fontawesome.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [GoogleApis Font](https://fonts.googleapis.com)
 * [EQuranID](https://equran.id/apidev)
 * [CountAPI](https://api.countapi.xyz/hit/{linkurl}/visits)
 
-## Error or Bug
+## Error or Bug 🐞
 * [Discord](https://dsc.gg/DrelezTM)
 * [YouTube](https://www.youtube.com/p/DrelezTM)
 * [Instagram](https://www.instagram.com/DrelezTM)
 
-## Version
+## Version 🔏
 * [Al-Quran ID v1.0](https://discord.com/channels/927562244538130503/927563396755378246/1056771312481222777)
 
-## License
+## License 📜
 * [License](https://github.com/DrelezTM/Al-Quran/blob/main/LICENSE)

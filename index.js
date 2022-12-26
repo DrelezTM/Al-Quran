@@ -19,7 +19,7 @@ app.get('/style', async (req, res) => {
 app.get('/', async (req, res) => {
 	let data = require('./views/database/ayat.json');
 	let random = data[Math.floor(Math.random() * data.length)];
-	res.render('/pages/index', { random: random, path: '/' });
+	res.render('pages/index', { random: random, path: '/' });
 });
 
 app.get('/surah', async (req, res) => {
